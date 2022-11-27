@@ -1,0 +1,53 @@
+:root {
+    --toast-container-width: 100vw;
+    --toast-body-width: 300px;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  
+  /* You can use this to choose where the toast should be */
+  /* .toast-container {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: var(--toast-container-width);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    z-index: 90000;
+  } */
+  
+  .toast-body {
+    width: var(--toast-body-width);
+    height: 100px;
+    transition: right 1s, color 1s, background-color 1s;
+    border-radius: 18px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: calc(-1 * var(--toast-body-width) );
+    color: white;
+    background-color: white;
+  }
+  
+  .error {
+    background-color: #ffcccc;
+    color: #cc0000;
+  }
+  
+  .success {
+    background-color: #95bb72;
+    color: #198754;
+  }
+  /* You should change this if you change the position of the toast */
+  .active {
+    right: 0px;
+  }
+  
