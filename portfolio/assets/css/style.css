@@ -151,7 +151,10 @@ h6 {
 */
 .nav-menu {
   padding: 0;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-menu * {
@@ -177,7 +180,7 @@ h6 {
   border-radius: 50px;
   background: #f2f3f5;
   height: 56px;
-  width: 100%;
+  width: min-content !important;
   overflow: hidden;
   transition: 0.3s;
 }
