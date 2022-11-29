@@ -351,7 +351,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .github:hover {
+#hero .social-links .github:hover, .github:hover {
   color: #ad5389;
   background: #ad5389;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
@@ -360,7 +360,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .youtube:hover {
+#hero .social-links .youtube:hover, li .youtube:hover {
   color: #e52d27;
   background: #e52d27;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
@@ -369,7 +369,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .codesandbox:hover {
+#hero .social-links .codesandbox:hover, li .codesandbox:hover {
   color: #41295a;
   background: #41295a;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
@@ -378,7 +378,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .stackBlitz:hover {
+#hero .social-links .stackBlitz:hover, li .stackBlitz:hover {
   color: #2c3e50;
   background: #2c3e50;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
@@ -387,7 +387,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .replit:hover {
+#hero .social-links .replit:hover, li .replit:hover {
   color: #FF512F;
   background: #FF512F;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #19547b, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
@@ -414,7 +414,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .codepen:hover {
+#hero .social-links .codepen:hover, li .codepen:hover {
   color: #52c234;
   background: #52c234;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
@@ -423,7 +423,7 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#hero .social-links .linkedin:hover {
+#hero .social-links .linkedin:hover, li .linkedin:hover {
   color: #1e3c72;
   background: #1e3c72;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
