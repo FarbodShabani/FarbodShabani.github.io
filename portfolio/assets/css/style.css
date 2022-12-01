@@ -310,9 +310,84 @@ h6 {
   z-index: 0;
 }
 
+#hero .technology-icons{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0.05;
+  transform: scale(0.5);
+  transition: transform 0.25s, opacity 0.75s;
+  z-index: 20;
+
+}
+
+#hero .technology-icons:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#hero #react {
+  top: 100px;
+  right: 150px;
+}
+
+#hero #redux {
+  top: 300px;
+  right: 10px;
+}
+
+#hero #node {
+  top: 150px;
+  left: 300px;
+}
+
+#hero #express {
+  width: 150px;
+  top: 50px;
+  left: 600px;
+}
+
+#hero #mongo {
+  height: 150px;
+  top: 20px;
+  left: 100px;
+}
+
+#hero #graph {
+  bottom: 100px;
+  left: 600px;
+}
+
+#hero #socket {
+  bottom: 150px;
+  left: 350px;
+}
+
+#hero #js {
+  bottom: 150px;
+  right: 350px;
+}
+
+#hero #tsc {
+  top: 300px;
+  right: 350px;
+}
+
+#hero #git {
+  bottom: 300px;
+  right: 600px;
+}
+
+
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero .technology-icons {
+    display: none;
   }
 }
 
