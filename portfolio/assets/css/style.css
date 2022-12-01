@@ -275,12 +275,39 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+@keyframes foggy {
+  0% {
+    left: 0px ;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
-  background-size: cover;
   position: relative;
+  background-color: #b2adad;
+  overflow: hidden;
+}
+
+#hero .foggy {
+  width: 150%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: foggy;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  z-index: 0;
 }
 
 @media (min-width: 992px) {
@@ -326,6 +353,7 @@ h6 {
 
 #hero .social-links {
   margin-top: 30px;
+  z-index: 100;
 }
 
 #hero .social-links a {
@@ -340,6 +368,7 @@ h6 {
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
+  z-index: 100;
 }
 
 #hero .social-links a:hover {
@@ -349,6 +378,7 @@ h6 {
   background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .github:hover, .github:hover {
@@ -358,6 +388,7 @@ h6 {
   background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .youtube:hover, li .youtube:hover {
@@ -367,6 +398,7 @@ h6 {
   background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .codesandbox:hover, li .codesandbox:hover {
@@ -376,6 +408,7 @@ h6 {
   background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .stackBlitz:hover, li .stackBlitz:hover {
@@ -385,6 +418,7 @@ h6 {
   background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .replit:hover, li .replit:hover {
@@ -394,6 +428,7 @@ h6 {
   background: linear-gradient(to right, #19547b, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .stack-overflow:hover {
@@ -403,6 +438,7 @@ h6 {
   background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .skype:hover {
@@ -412,6 +448,7 @@ h6 {
   background: linear-gradient(to right, #2b5464, #00aff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .codepen:hover, li .codepen:hover {
@@ -421,6 +458,7 @@ h6 {
   background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100;
 }
 
 #hero .social-links .linkedin:hover, li .linkedin:hover {
@@ -430,6 +468,7 @@ h6 {
   background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 100; 
 }
 
 @media (max-width: 992px) {
