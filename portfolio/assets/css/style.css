@@ -894,6 +894,15 @@ section {
   padding: 0;
 }
 
+.projects-details .category {
+  background-color: #f0f5ff;
+  color: #1d39c4;
+  border: 1px solid #adc6ff;
+  padding: 1px 7px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
