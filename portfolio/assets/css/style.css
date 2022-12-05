@@ -476,6 +476,16 @@ h6 {
   z-index: 100;
 }
 
+#hero .social-links .buyMeCoffee:hover, li .buyMeCoffee:hover {
+  color: #403B4A ;
+  background: #403B4A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent ;
+  z-index: 100;
+}
+
 #hero .social-links .codesandbox:hover, li .codesandbox:hover {
   color: #41295a;
   background: #41295a;  /* fallback for old browsers */
